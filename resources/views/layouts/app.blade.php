@@ -13,8 +13,13 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
 
-    <body>
-        @yield('content')
-        @include('commons.error_messages')
+   <body>
+        @include('commons.navbar')
+        
+        <div class="container">
+            @include('commons.error_tasks')
+            
+            @yield('content')
+        </div>
     </body>
 </html>
